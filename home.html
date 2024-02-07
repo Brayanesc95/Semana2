@@ -2,10 +2,86 @@
 <head>
     <title>Tarea2</title>
     <link rel="stylesheet" href="styles2.css">
+    <script src="programs.js"></script>
 </head>
 <body>
     <div>
         <h1>Ejercicio #1</h1>
+        <p>Vamos a crear un input para un numero y otro para otro numero el objetivo de esta es<br>
+            que la respuesta nos diga que el primer numero elevado al segundo numero es el valor X.
+        </p>
+        <!--Boton 1-->
+        <label for="base">Número Base:</label>
+        <input type="number" id="base" required><br><br>
+        <label for="exponente">Exponente:</label>
+        <input type="number" id="exponente" required><br><br>
+        <button onclick="calcularPotencia()">Calcular</button>
+        <p id="resultado1"></p>
+
+    </div>
+    <div>
+        <h1>Ejercicio #2</h1>
+        <p>Vamos a crear un input para numero donde ingresamos los grados centigrados al presionar<br>
+            el botón, debe de mostrarse cuantos grados Farenheit corresponden esos grados Centígrados.
+        </p>
+        <!--Boton 2-->
+        <label for="Celcius">Grados centigrados:</label>
+        <input type="float" id="Celcius" required><br><br>
+        <button onclick="calcularCentigrados()">Calcular °C</button>
+        <p id="resultado2"></p>
+    </div>
+    <div>
+        <h1>Ejercicio #3</h1>
+        <p>Vamos a hacer un input tipo texto, que al precionar el boton agregar despliegue en una<br>
+        lista los nombres que vamos agregando, luego habrá otro input numérico que nos permitirá <br>
+        ingresar el numero de letras, y al presionar otro botón filtrar se debe de mostrar en otro list,<br>
+        todos los nombres que cumplen con ese numero de letras.
+        </p>
+        <!--Boton 3-->
+        <label for="nombreInput">Ingrese un nombre:</label>
+        <input type="text" id="nombreInput" />
+        <button onclick="agregarNombre()">Agregar</button>
+
+        <ul id="listaNombres">
+        </ul>
+
+        <label for="longitudInput">Número de letras:</label>
+        <input type="number" id="longitudInput" />
+        <button onclick="filtrarNombres()">Filtrar</button>
+        <ul id="listaFiltrada">
+        </ul>
+    </div>
+    <div>
+        <h1>Ejercicio #4</h1>
+        <p>Vamos a hacer un input que permita ingresar una fecha, y al presionar el botón, debe de <br>
+        aparecer la edad de las personas que nacieron en dicha fecha, en años
+        </p>
+        <!--Boton 4-->
+        <label for="fechaNacimiento">Fecha de nacimiento:</label>
+        <input type="date" id="fechaNacimiento" />
+
+        <button onclick="calcularEdad()">Calcular Edad</button>
+
+        <p id="edadCalculada"></p>
+    </div>
+    <div>
+        <h1>Ejercicio #5</h1>
+        <p>Vamos a hacer un input que permita ingresar una hilera, y lo que debe de mostrar este al<br>
+        presionar el botón calcular es el número de palabras en dicha hilera.</p>
+        <!--Boton 5-->
+    </div>
+    <div>
+        <h1>Ejercicio #6</h1>
+        <p>Vamos a usar un input numérico que nos permita agregar números a una lista y que cuando<br>
+        presionemos el botón se muestre el promedio de los números ingresados.</p>
+         <!--Boton 6-->
+    </div>
+    <div>
+        <h1>Ejercicio #7</h1>
+        <p>Vamos a presentar un input que permitira ingresar un color y al precionar el boton se debe<br>
+        de mostrar un cuadro relleno de ese color.
+        </p>
+         <!--Boton 7-->
     </div>
 </body>
 
