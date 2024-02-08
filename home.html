@@ -6,6 +6,13 @@
 </head>
 <body>
     <div>
+        <h1>Ejercicios realizados por:<br>
+             Brayan Eduardo Sosa Canto<br>
+            Carnet 21004449</h1>
+       
+
+    </div>
+    <div>
         <h1>Ejercicio #1</h1>
         <p>Vamos a crear un input para un numero y otro para otro numero el objetivo de esta es<br>
             que la respuesta nos diga que el primer numero elevado al segundo numero es el valor X.
@@ -69,12 +76,23 @@
         <p>Vamos a hacer un input que permita ingresar una hilera, y lo que debe de mostrar este al<br>
         presionar el botón calcular es el número de palabras en dicha hilera.</p>
         <!--Boton 5-->
+        <input type="text" id="inputText" placeholder="Ingrese una hilera  de texto aquí:">
+        <button onclick="ContarPalabras()">Calcular</button>
+        <div id="LargoPalabras"></div>
     </div>
     <div>
         <h1>Ejercicio #6</h1>
         <p>Vamos a usar un input numérico que nos permita agregar números a una lista y que cuando<br>
         presionemos el botón se muestre el promedio de los números ingresados.</p>
          <!--Boton 6-->
+         <label for="NumberInput">Ingrese el numero a promediar:</label>
+        <input type="number" id="NumberInput" />
+        <button onclick="agregarNumero()">Agregar</button>
+
+        <ul id="listaNumeros">
+        </ul>
+        <button onclick="calcularPromedio()">Calcular Promedio</button>
+        <div id="calcPromedio"></div>
     </div>
     <div>
         <h1>Ejercicio #7</h1>
@@ -82,6 +100,12 @@
         de mostrar un cuadro relleno de ese color.
         </p>
          <!--Boton 7-->
+         <p><strong>Importante por favor ingresar el nombre del color que desea en inglés (Red,Blue,Black)</strong></p>
+         <div id="BotonColor">
+            <input type="text" id="inputColor" placeholder="Ingresa un color">
+            <button onclick="cambiarColor()">Cambiar Color</button>
+            <div id="ColorCuadro" style="width: 100px; height: 100px; margin-top: 10px;"></div>
+        </div>
     </div>
 </body>
 
