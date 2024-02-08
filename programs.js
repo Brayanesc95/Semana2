@@ -49,3 +49,40 @@ function filtrarNombres() {
   
     document.getElementById('edadCalculada').textContent = 'La edad es: ' + edad + ' años';
   }
+
+  function ContarPalabras() {
+    var inputText = document.getElementById('inputText').value;
+    var words = inputText.trim().split(/\s+/);
+    var numWords = words.length;
+    if (inputText === '') {
+        numWords = 0;
+    }
+    document.getElementById('LargoPalabras').innerText = 'Número de palabras: ' + numWords;
+}
+
+let numeros = []; 
+
+function agregarNumero() {
+    let numero = document.getElementById('NumberInput').value;
+    numeros.push(numero);
+    let lista = document.getElementById('listaNumeros');
+    let elemento = document.createElement('li');
+    elemento.textContent = numero;
+    lista.appendChild(elemento);
+    document.getElementById('NumberInput').value = '';
+}
+
+function calcularPromedio() {
+  if (numeros.length > 0) {
+      var suma = numeros.reduce((acumulado, actual) => acumulado + actual, 0);
+      var promedio = suma / numeros.length;
+      document.getElementById('calcPromedio').innerText = 'Promedio: ' + promedio.toFixed(2);
+  } else {
+      document.getElementById('calcPromedio').innerText = 'Por favor, agrega algunos números primero.';
+  }
+}
+
+function cambiarColor() {
+  var color = document.getElementById('inputColor').value; 
+  document.getElementById('ColorCuadro').style.backgroundColor = color; 
+}
